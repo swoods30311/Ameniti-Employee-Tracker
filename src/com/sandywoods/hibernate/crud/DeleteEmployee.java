@@ -24,7 +24,7 @@ public class DeleteEmployee {
 		
 		
 		try {								
-			int employeeId = 5;
+			int employeeId = 3;
 			
 			// now get a new session and start transaction
 			session = factory.getCurrentSession();
@@ -36,8 +36,8 @@ public class DeleteEmployee {
 			Employee myEmployee = session.get(Employee.class, employeeId);
 			
 			// delete employee id=1 the HQL way
-			System.out.println("Deleting employee id=5");
-			session.createQuery("delete from Employee where id=5").executeUpdate();
+			System.out.println("Deleting employee id=3");
+			session.createQuery("delete from Employee where id=3").executeUpdate();
 				
 			// commit the transaction
 			session.getTransaction().commit();

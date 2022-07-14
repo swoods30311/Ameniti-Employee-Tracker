@@ -47,9 +47,9 @@ public class QueryForEmployee {
 			System.out.println("\n\nEmployees who have last name of Travers OR first name Trenton");
 			displayEmployees(theEmployees);
 			
-			// query employees where dept LIKE 'nology'
+			// query employees where dept LIKE 'CEO'
 			theEmployees = session.createQuery("from Employee e where"
-					+ " e.department LIKE '%nology'").getResultList();
+					+ " e.department LIKE '%CEO'").getResultList();
 
 			System.out.println("\n\nEmployees whose dept ends with nology");			
 			displayEmployees(theEmployees);
